@@ -7,7 +7,7 @@ exploratory purposes.
 
 Document source is `doc/main.typ` and implementations in `src/<lang>`. For
 implementation building instructions see the respective
-`src/<lang>/README.md`, for the document it is:
+`src/<lang>/README.md`. To generate the document run:
 
 ```bash
 typst compile doc/main.typ
@@ -15,6 +15,9 @@ typst compile doc/main.typ
 
 > [!NOTE]
 > This command will output to `doc/main.pdf` by default.
+
+When implementing a new language, ensure to add its build & test steps to
+`.github/workflows/<lang>.yaml` to ensure nothing breaks.
 
 ## License
 
