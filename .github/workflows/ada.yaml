@@ -21,3 +21,4 @@ jobs:
         run: |
           cd src/ada/assignment3
           alr build
+          alr run

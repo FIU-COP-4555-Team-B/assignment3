@@ -1,0 +1,24 @@
+name: C++ Impl Build & Test
+
+on:
+  push:
+    paths:
+      - src/cpp/**
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install Built Essentials
+        run: sudo apt install -y build-essential
+
+      - name: Build & Test C++ Implementation
+        run: |
+          cd src/cpp
+          make
+          ./out
