@@ -17,10 +17,10 @@ jobs:
         run: sudo snap install typst
 
       - name: Typst Compile
-        run: typst compile doc/main.typ
+        run: typst compile doc/main.typ assignment3.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v7
         with:
-          name: assignment3.pdf
-          path: doc/main.pdf
+          name: assignment3-pdf
+          path: assignment3.pdf
