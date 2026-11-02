@@ -19,7 +19,7 @@
   #datetime.today().display()
 ]
 
-Languages chosen: Ada, TBD.
+Languages chosen: Ada, C++, TBD.
 
 = Ada pass-by-value-result
 
