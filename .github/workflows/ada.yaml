@@ -1,0 +1,24 @@
+name: Ada Impl Build & Test
+
+on:
+  push:
+    paths:
+      - src/ada/**
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install Alire
+        uses: alire-project/setup-alire@v3
+
+      - name: Build & Test Ada Implementation
+        run: |
+          cd src/ada/assignment3
+          alr build
+          alr test
