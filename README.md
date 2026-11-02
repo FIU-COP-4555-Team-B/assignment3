@@ -17,7 +17,9 @@ typst compile doc/main.typ
 > This command will output to `doc/main.pdf` by default.
 
 When implementing a new language, ensure to add its build & test steps to
-`.github/workflows/<lang>.yaml` to ensure nothing breaks.
+`.github/workflows/<lang>.yaml` to ensure nothing breaks. The `typst.yaml`
+workflow also automatically uploads `main.typ`'s resulting PDF as an artifact
+when a .typ file is edited, [check the latest runs here](https://github.com/FIU-COP-4555-Team-B/assignment3/actions/workflows/typst.yaml).
 
 ## License
 
