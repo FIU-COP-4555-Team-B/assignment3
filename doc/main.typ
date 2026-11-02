@@ -1,4 +1,4 @@
-#set page(paper: "us-letter", margin: 1in)
+#set page(paper: "us-letter", margin: 1.5cm)
 
 #set text(
   font: (
@@ -21,6 +21,11 @@
 
 Languages chosen: Ada, TBD.
 
-= Ada
+= Ada pass-by-value-result
 
-TBD
+Marcelo Hernandez
+
+#image("screenshots/ada-src.png", width: 15cm)
+#image("screenshots/ada-out.png", width: 11cm)
+
+#pagebreak()
