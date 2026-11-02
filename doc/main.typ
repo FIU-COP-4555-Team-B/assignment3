@@ -25,7 +25,14 @@ Languages chosen: Ada, TBD.
 
 Marcelo Hernandez
 
-#image("screenshots/ada-src.png", width: 15cm)
+#image("screenshots/ada-src.png", width: 16cm)
 #image("screenshots/ada-out.png", width: 11cm)
 
 #pagebreak()
+
+= C++ pass-by-reference
+
+Marcelo Hernandez
+
+#image("screenshots/cpp-src.png", width: 17cm)
+#image("screenshots/cpp-out.png", width: 9cm)
