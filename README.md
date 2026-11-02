@@ -1,4 +1,4 @@
-# Assignment 3: Pass-by-X
+# Assignment 3: Subprograms Parameter Passing Models
 
 Implementing different subprogram parameter models in different languages for
 exploratory purposes.
