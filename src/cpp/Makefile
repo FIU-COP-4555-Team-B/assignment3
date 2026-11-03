@@ -1,4 +1,4 @@
-compile: main.cpp
+out: main.cpp
 	c++ main.cpp -o out
 
 clean:
