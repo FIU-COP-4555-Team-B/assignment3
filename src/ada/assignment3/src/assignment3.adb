@@ -1,10 +1,5 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
---  Here I declare X and Y, and have a function which adds 1 to X and
---  multiplies Y by 2. The function waits 1 second after doing so, so that we
---  can print the values _while_ the function is running, showcasing the fact
---  that the value has not been copied out yet.
---
 --  Task declaration syntax was gotten from:
 --  https://stackoverflow.com/questions/4413485/wait-for-tasks-in-ada
 

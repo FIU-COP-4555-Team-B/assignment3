@@ -4,13 +4,6 @@
 #include <string>
 #include <thread>
 
-// here, much like in the Ada example I have a function which takes in x and y
-// and mutates them. However these are passed-by-reference, so we modify the
-// variables in addOneMult2 on another thread, wait 100ms (to avoid racing with
-// the thread's startup time) and print x and y, seeing that they've mutated
-// instantly. We then wait until t finishes to print them (which should have no
-// effect, save for a cosmic bit flip.)
-
 void addOneMult2(int &x, int &y) {
   x += 1;
   y *= 2;

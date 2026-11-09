@@ -26,6 +26,12 @@ For this assignment, the languages chosen were: Ada, C++, Scheme, and TBD.
 Marcelo Hernandez
 
 #image("screenshots/ada-src.png", width: 16cm)
+
+Here I declare X and Y, and have a function which adds 1 to X and multiplies Y
+by 2. The function waits 1 second after doing so, so that we can print the
+values _while_ the function is running, showcasing the fact that the value has
+not been copied out yet.
+
 #image("screenshots/ada-out.png", width: 11cm)
 
 #pagebreak()
@@ -35,6 +41,14 @@ Marcelo Hernandez
 Marcelo Hernandez
 
 #image("screenshots/cpp-src.png", width: 17cm)
+
+Here, much like in the Ada example I have a function which takes in x and y,
+then mutates them. However, these are passed-by-reference instead, so we modify
+the variables in addOneMult2 on another thread, wait 100ms (to avoid racing
+with the thread's startup time) and print x and y, seeing that they've mutated
+instantly. We then wait until t finishes to print them (which should have no
+effect, save for a cosmic bit flip.)
+
 #image("screenshots/cpp-out.png", width: 9cm)
 
 #pagebreak()
