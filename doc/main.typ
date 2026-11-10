@@ -19,7 +19,7 @@
   #datetime.today().display()
 ]
 
-For this assignment, the languages chosen were: Ada, C++, Scheme, and TBD.
+For this assignment, the languages chosen were: Ada, C++, Scheme, and C\#.
 
 = Ada pass-by-value-result
 
@@ -66,3 +66,25 @@ subprogram's own local copies, and the caller's `x` and `y` remain untouched, so
 after the call they still hold 1 and 4.
 
 #image("screenshots/scm-out.png", width: 80%)
+
+#pagebreak()
+
+= C\# pass-by-result (`out` mode)
+
+Shirina Daniel
+
+C\# `out` parameters provide an output-only parameter mode: the caller's
+initial values are not inputs to the subprogram, and the subprogram must assign
+each parameter before it can return. C\# implements `out` using reference
+semantics, rather than a separate copy-out operation. Here, `AddOneAndDouble`
+produces the two output values, which the caller observes after the call.
+
+#image("screenshots/csharp-src.png", width: 16cm)
+
+Before the call, `x` and `y` are 1 and 4. Inside the subprogram, the `out`
+parameters are assigned and printed as 2 and 8. After it returns, `x` and `y`
+hold those output values.
+
+Execution output:
+
+#image("screenshots/csharp-out.png", width: 13cm)

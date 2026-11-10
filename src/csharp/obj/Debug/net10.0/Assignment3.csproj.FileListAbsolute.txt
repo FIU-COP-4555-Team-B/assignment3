@@ -1,0 +1,15 @@
+C:\Users\shiri\assignment3\src\csharp\bin\Debug\net10.0\Assignment3.exe
+C:\Users\shiri\assignment3\src\csharp\bin\Debug\net10.0\Assignment3.deps.json
+C:\Users\shiri\assignment3\src\csharp\bin\Debug\net10.0\Assignment3.runtimeconfig.json
+C:\Users\shiri\assignment3\src\csharp\bin\Debug\net10.0\Assignment3.dll
+C:\Users\shiri\assignment3\src\csharp\bin\Debug\net10.0\Assignment3.pdb
+C:\Users\shiri\assignment3\src\csharp\obj\Debug\net10.0\Assignment3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shiri\assignment3\src\csharp\obj\Debug\net10.0\Assignment3.AssemblyInfoInputs.cache
+C:\Users\shiri\assignment3\src\csharp\obj\Debug\net10.0\Assignment3.AssemblyInfo.cs
+C:\Users\shiri\assignment3\src\csharp\obj\Debug\net10.0\Assignment3.csproj.CoreCompileInputs.cache
+C:\Users\shiri\assignment3\src\csharp\obj\Debug\net10.0\Assignment3.sourcelink.json
+C:\Users\shiri\assignment3\src\csharp\obj\Debug\net10.0\Assignment3.dll
+C:\Users\shiri\assignment3\src\csharp\obj\Debug\net10.0\refint\Assignment3.dll
+C:\Users\shiri\assignment3\src\csharp\obj\Debug\net10.0\Assignment3.pdb
+C:\Users\shiri\assignment3\src\csharp\obj\Debug\net10.0\Assignment3.genruntimeconfig.cache
+C:\Users\shiri\assignment3\src\csharp\obj\Debug\net10.0\ref\Assignment3.dll
