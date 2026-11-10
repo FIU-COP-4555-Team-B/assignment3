@@ -1,0 +1,24 @@
+name: Fortran Impl Build & Test
+
+on:
+  push:
+    paths:
+      - src/fortran/**
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install GNU Fortran
+        run: sudo apt-get update && sudo apt-get install -y gfortran
+
+      - name: Build & Test Fortran Implementation
+        run: |
+          cd src/fortran
+          gfortran main.f90 -o assignment3
+          ./assignment3

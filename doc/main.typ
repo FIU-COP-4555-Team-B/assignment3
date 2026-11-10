@@ -19,7 +19,7 @@
   #datetime.today().display()
 ]
 
-For this assignment, the languages chosen were: Ada, C++, Scheme, and C\#.
+For this assignment, the languages chosen were: Ada, C++, Scheme, and Fortran.
 
 = Ada pass-by-value-result
 
@@ -69,22 +69,20 @@ after the call they still hold 1 and 4.
 
 #pagebreak()
 
-= C\# pass-by-result (`out` mode)
+= Fortran pass-by-result (`INTENT(OUT)`)
 
 Shirina Daniel
 
-C\# `out` parameters provide an output-only parameter mode: the caller's
-initial values are not inputs to the subprogram, and the subprogram must assign
-each parameter before it can return. C\# implements `out` using reference
-semantics, rather than a separate copy-out operation. Here, `AddOneAndDouble`
-produces the two output values, which the caller observes after the call.
+Fortran's `INTENT(OUT)` declares output-only dummy parameters. Their incoming
+values are not inputs to the subprogram; the subprogram assigns each result
+before returning. The caller's variables receive the two output values.
 
-#image("screenshots/csharp-src.png", width: 16cm)
+#image("screenshots/fortran-src.png", width: 16cm)
 
-Before the call, `x` and `y` are 1 and 4. Inside the subprogram, the `out`
-parameters are assigned and printed as 2 and 8. After it returns, `x` and `y`
-hold those output values.
+Before the call, `x` and `y` are 1 and 4. Inside the subprogram, the
+`INTENT(OUT)` parameters are assigned and printed as 2 and 8. After it returns,
+the caller's variables contain those results.
 
 Execution output:
 
-#image("screenshots/csharp-out.png", width: 13cm)
+#image("screenshots/fortran-out.png", width: 13cm)
